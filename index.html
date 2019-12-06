@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>篮球网站</title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			.contain{
+				width: 1200px;
+				height: 1400px;
+				margin: auto;	
+		     }  
+			.nav{
+				height: 70px;
+				position: absolute;
+				width: 100%;
+				margin-bottom: 20px;
+				top: 0;
+				position: relative;
+			}
+			ul{
+				height: 70px;
+			    background-color: #a41f24;
+			    display: inline-block;
+			    vertical-align: top;
+			    width: 1126px;
+			    margin-left: 0;
+			}
+			.nav li{
+				display: inline-block;
+				height:70px ;
+				line-height: 70px;
+			    width: 110px;
+			    text-align: center;
+			    vertical-align: top;
+			}
+			.nav a{
+				color: white;
+				text-decoration: none;
+				font-size: 20px;
+				display: block;
+			}
+			.nav img{
+				width:69px;
+				height: 69px;
+				display: inline-block;		
+			}
+			.nav ul li ol{
+				background-color: #A41F24;
+				display: none;
+				
+			}
+
+			.nav ul li:hover ol{
+				display: block;
+			}
+			.nav ul li a:hover{
+	     	    background-color: #EEEEEE;
+	         	color: black;
+	        }
+	        .middle{
+	        	width: 1200px;
+	        	height: 700px;  
+	            background-color: #f1f1f1;      	
+	            margin: 0 0 10px 0;
+	            margin-top: 10px;
+	        }
+	        .middle .middle-left{
+	        	width: 530px;
+	        	float: left;
+	            height: 698px;
+	    	}
+	    	img{
+	    		width:439px;
+	    		height: 315px;
+	    	}
+	    	.m-l-top{
+	    		width: 430px;
+	    		height: 315px;
+	    		background-image: url(img/ivring.jpg);
+	    		background-repeat: no-repeat;
+	    		background-position: 30px 20px;
+	    		position: relative;
+	    	}
+            .w-all{
+            	position: relative;
+            	top: 270px;
+            	left: 31px;
+            	background-color: #000000;
+            	width: 339px;
+            	opacity: 0.5;
+            }
+            .w-all p{
+            	color: white;
+            }
+            .middle-right{
+            	width:670px ;
+            	float: right;   
+            	position: relative;  
+            	font-size: 19px;
+            }
+            .middle-right img{
+            	width: 300px;
+            	height: 470px;
+            	margin: 10px;
+                float: right;             
+            }
+            .middle-left a{
+            	text-decoration: none;           	
+            }
+            .middle-left h3 a{
+            	color: #a41f24;
+            }
+            .middle-left h3{
+            	margin: 10px 0 5px 5px;
+            }
+            .middle-left p{
+            	margin: 3px 40px;
+            }
+            .bottom{
+            	background-image: url(img/beijing.png);
+            	height: 425px;
+            	margin: 10px 0;
+            	position: relative;
+            	color: white;
+            	font-size: 22px;
+            }
+            .name{
+            	position: absolute;
+            	top: 96px;
+            	left: 55px;
+            }
+            .name input,.tel input,.email input,.password input{
+            	width: 180px;
+            	height: 30px;
+            	background-color: #EEEEEE;
+            	opacity: 0.5;
+            	}
+            .tel{
+            	position: absolute;
+            	top: 210px;
+            	left: 55px;
+            }
+            .email{
+            	position: absolute;
+            	top: 96px;
+            	left: 320px;
+            }
+            .password{
+            	position: absolute;
+            	top: 210px;
+            	left: 320px;
+            }
+            .textarea {
+            	position: absolute;
+            	top: 96px;
+            	left: 600px;
+            }
+            .textarea textarea{
+            	width: 380px;
+            	height: 160px;
+            	opacity: 0.5;
+            }
+            .textarea span{
+            	vertical-align: top;          	
+            }
+            .realbottom{
+            	background-color:#b58867;
+            	height: 40px;
+            	font-family:"华文琥珀";
+            	position: relative;
+            	margin-bottom: 10px;
+            }
+            .realbottom .one{
+            	position: absolute;
+            	right: 0;
+            }
+            .realbottom .two{
+            	position: absolute;
+            	right: 0;
+            	top: 20px;
+            }
+            .realbottom img{
+            	position: absolute;
+            	width: 252px;
+            	height: 252px;
+            	top:40px;
+            	right: 0;
+            }
+            .nav .chao{
+            	position: absolute;
+            	color: white;
+            	font-size: 15px;
+            	top: -10px;
+            	right: 85px;
+            }
+            .nav .chao1{
+            	position: absolute;
+            	color: white;
+            	font-size: 15px;
+            	top:15px;
+            	right: 40px;
+            	width: 130px;
+            }
+		</style>
+	</head>
+	<body>
+		<div class="contain">
+			
+			<div class="nav">
+				<img src="img/lanqiu.jpg"/>
+				<ul>
+					<li><a href="">首页</a></li>
+					<li><a href="">新闻</a></li>
+					<li><a href="">比赛中心</a>
+						<ol>
+							<li><a href="">战绩排行</a></li>
+						</ol>
+					</li>
+					<li><a href="">赛程</a>
+						<ol>
+							<li><a href="">快船赛程</a></li>
+							<li><a href="">雄鹿赛程</a></li>
+							<li><a href="">太阳赛程</a></li>
+							<li><a href="">掘金赛程</a></li>
+							<li><a href="">76人赛程</a></li>
+						</ol>
+					</li>
+					<li><a href="">球队</a>
+						<ol>
+							<li><a href="">快船</a></li>
+							<li><a href="">76人</a></li>
+							<li><a href="">快船赛程</a></li>
+							<li><a href="">76人赛程</a></li>
+							<li><a href="">快船新闻</a></li>
+							<li><a href="">太阳新闻</a></li>
+							<li><a href="">76人新闻</a></li>
+						</ol>
+					</li>
+					<li><a href="">选秀</a></li>
+					<li class="chao">张智超</li>
+					<li class="chao1">学号：16184814</li>
+				</ul>
+			</div>
+			<div class="middle">
+				<div class="middle-left">
+			        <div class="m-l-top">
+			        	<div class="w-all">
+			        		<p class="w-top"><b>"以身作则"</b></p>
+			        		<p class="w-bottom">欧文在篮网这方面做得更好</p>
+			        	</div>
+			        </div>
+			        <div class="m-l-bottom">
+			        	<h3><a href="contain1.html" target="_blank">特雷杨30+12难敌国王  </a><a href="contain2.html" target="_blank">拉塞尔52分勇士惜败</a></h3>
+			        	<p><a href="contain3.html" target="_blank">高光表现！麦科勒姆半场23分</a></p>
+			        	<p><a href="contain4.html" target="_blank">范弗利特：我们本想拿下西部五连客的所有胜利</a></p>
+			        	<p><a href="contain5.html" target="_blank">怀特塞德：赛季还远没有结束，我们正在进步</a></p>
+			        	<p><a href="">西蒙斯右肩肩关节一级扭伤</a></p>
+			        	<p><a href="">格里芬被列入每日观察名单</a></p>
+			        	<p><a href="">引进前场球员不是开拓者的首要任务</a></p>
+			        	<h3><a href="">巴特勒34+5热火破太阳 塔图姆24+9绿军擒黄蜂</a></h3>
+			        	<p><a href="">里弗斯执教生涯胜场数达到900场</a></p>
+			        	<p><a href="">洛城一条街！路威砍下26+8</a></p>
+			        	<p><a href="">绿军和湖人分居东西部榜首</a></p>
+			        	<p><a href="">手感冰凉！洛奇尔11投1中</a></p>
+			        	<p><a href="">布克空砍22+3+5</a></p>
+			        	<p><a href="">锡安威廉姆森谈半月板伤势</a></p>
+			        </div>
+				</div>
+				<div class="middle-right">
+					<img src="img/zhanmusi.png"/>
+					<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;虎扑11月8日讯 湖人后卫埃弗里-布拉德利今日在采访中称赞队友勒布朗-詹姆斯的传球能力。</p>
+				    <br />
+				    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;“他完成的一些传球太不可思议了，”布拉德利说，“那天我还在板凳席上和队友说笑此事。我说当我回看录像时，教练提醒我，'嘿，你应该预见到那次传球。'他在比赛期间就能实时看到那些机会，太难以置信了，这展现了他对比赛的专注，以及他的天赋。他能够实时地分析比赛，看到这一幕很不可思议。我非常享受能与这样一位可以提升身边所有人的球员打球。”</p>
+				    <br />
+				    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;关于让他感到惊叹的詹姆斯具体传球回合，布拉德利说：“那个球就是他突入内线，做了一个拿起球的假动作，好像他要传到底角似的，实际上他传给了贾维尔（麦基）让他完成上篮。那个球太难以置信了，我知道我永远也不会做出这种传球，甚至看不到传球机会。就像隆多那般，这些家伙可以提前三四步预判到球场动向，看到这些感觉很酷。”</p>
+				    <br />
+				    <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;布拉德利表示由于詹姆斯强大的球场洞察力，他必须时刻做好接球准备：“是的。教练也告诉我们总是要准备就绪。特别是当我站在底角时，你永远不会知道什么时候球就被传到自己手里了。当你和勒布朗同场时，你需要时刻做好准备，迎接比赛中呈现的任何出手机会。因为正如我所说，他能观察到我们看不到的那些机会。”</p>
+				</div>
+			</div> 
+			<hr />
+			<div class="bottom">			
+					<p class="name"><span>姓名:</span><input type="text" name="text" value=""/></p>
+				    <p class="tel"><span>电话:</span><input type="tel" name="tel" value="" /></p>
+				    <p class="email"><span>邮箱:</span><input type="email" name="email"  value="" /></p>
+				    <p class="password"><span>密码:</span><input type="password" name="password"  value="" /></p>								
+					<p class="textarea"><span>留言板:</span><textarea name="textarea" rows="" cols=""></textarea></p>									
+			</div>
+		
+		</div>
+	</body>
+</html>
